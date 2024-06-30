@@ -1,3 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('https://plus.unsplash.com/premium_photo-1672070779337-e5655d9bbd9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 200px; /* 調整header的高度 */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+        }
+
+        .tab {
+            margin: 0 10px;
+        }
+
+        .tab a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer img {
+            width: 30%; /* Make the image 30% of its original size */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
 <body>
-<h1>hello world</h1>
+    <header>
+        <h1>Iris's Portfolio</h1>
+    </header>
+
+    <div class="tabs">
+        <div class="tab"><a href="index.html">About</a></div>
+        <div class="tab"><a href="portfolio.html">Portfolio</a></div>
+        <div class="tab"><a href="contact.html">Contact</a></div>
+    </div>
+
+
+    <div class="content" id="About">
+        <h2>About</h2>
+        <p>Hi! I'm Iris's portfolio.I'm a UI/UX Designer.</p>
+        <!-- Image inserted below the content with a width of 500 pixels -->
+        <img src="https://plus.unsplash.com/premium_photo-1661412938808-a0f7be3c8cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fFVJVVh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Image Caption">
+    </div>
+
+    <footer>
+        <p>Email: irischen89@gmail.com</p>
+        <p>Copyright &copy; 2023 Iris's Portfolio</p>
+    </footer>
 </body>
+</html>
