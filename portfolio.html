@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('https://plus.unsplash.com/premium_photo-1672070779337-e5655d9bbd9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+            background-size: cover;
+            background-position: center;
+ 	    height: 200px; /* 調整header的高度 */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+        }
+
+        .tab {
+            margin: 0 10px;
+        }
+
+        .tab a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer img {
+            width: 30%; /* Make the image 30% of its original size */
+            height: auto; /* Maintain aspect ratio */
+        }
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:700');
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	min-height: 100vh;
+	background-image: url(https://lh3.googleusercontent.com/VwYbKpJc8JSAAQ0v4pRCpQJiOcM3g7w26Ml-_5sEJQRZmJRqcUbOWd8D3f8afK5bEPUEWAfY67xzftwsqjX23cHOx1AsahwS0W3LKZ5-INSJm98uCiSp1QxifwDHwJzg=w1280);
+	background-size: cover;
+}
+.container{
+	/*max-width: 1280px;*/
+	left: 50;
+	right: 50;
+	margin: auto;
+	text-align: center;
+}
+.banner{
+	width: 100%;
+	height: 28px;
+	background-image: url(https://lh3.googleusercontent.com/VwYbKpJc8JSAAQ0v4pRCpQJiOcM3g7w26Ml-_5sEJQRZmJRqcUbOWd8D3f8afK5bEPUEWAfY67xzftwsqjX23cHOx1AsahwS0W3LKZ5-INSJm98uCiSp1QxifwDHwJzg=w1280);
+	background-size: cover;
+	margin-bottom: 5px;
+	background-position: center bottom;
+	border-radius: 10px;
+	position: relative;
+}
+.banner .text{
+	position: absolute;
+	font-size: 50px;
+	color: #fff;
+	left: 10px;
+	bottom: 10px;
+	-webkit-text-stroke: 1px black;
+}
+.box{
+	position: relative;
+	width: calc(300px);
+	height: 300px;
+	background-color: #000;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	text-align: left;
+}
+.box img{
+	height: 100%;
+	transform: translate(-100px,0);
+	opacity: 0.5;
+	position: absolute;
+	transition: all 0.35s;
+}
+.box .title{
+	position: absolute;
+	font-size: 30px;
+	color: #1e2e39;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 100px;
+	margin-right: -1000px;
+	transition: all 0.35s;
+}
+.box .year{
+	position: absolute;
+	font-size: 30px;
+	color: #7997ab;
+	right: 0;
+	bottom: 0;
+	margin-bottom: -300px;
+	margin-right: 10px;
+	transition: all 0.35s;
+	transition-delay: 0.5s;
+}
+.box:hover img{
+	transform: translate(0,0);
+	opacity: 0.9;
+}
+.box:hover .title{
+	margin-right: 10px;
+}
+.box:hover .year{
+	margin-bottom: 10px;
+}
+.box:hover .button{
+	margin-top: 20px;
+}
+
+.button{
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	background-color: #7997ab;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50px;
+	user-select: none;
+	cursor: pointer;
+	right: 10px;
+	top: 10px;
+	color: #fff;
+	border: 0px solid #fff;
+	transition: all 0.5s;
+	transform: translate(50%, -50%);
+	margin-right: 90px;
+	margin-top: -130px;
+}
+.button:hover{
+	font-size: 40px;
+	width: 160px;
+	height: 50px;
+	background-color: #476278;
+	border: 5px solid #fff;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Iris's Portfolio</h1>
+    </header>
+
+    <div class="tabs">
+        <div class="tab"><a href="index.html">About</a></div>
+        <div class="tab"><a href="portfolio.html">Portfolio</a></div>
+        <div class="tab"><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="content" id="portfolio">
+        <h2>Portfolio</h2>
+        <p>This is the portfolio page for Iris's work.</p>
+ </div>
+	<div class="container">
+			<div class="banner">
+			</div>
+			<div class="box">
+				<img src="https://ihsinchendesign.files.wordpress.com/2022/06/ui2.png?w=580&zoom=2" alt="">
+				<div class="title">紀錄APP  UI/UX</div>
+				<div class="year">2023</div>
+				<a href="1/p1.html">
+					<div class="button">more</div>
+				</a>
+			</div>
+			<!-- 	<div class="box">
+				<img src="https://ihsinchendesign.files.wordpress.com/2021/12/ui.png?w=768" alt="">
+				<div class="title">禮品購物 APP UI</div>
+				<div class="year">2021</div>
+				<a href="https://codepen.io/jzknqsxb-the-looper/full/bGvVvdZ">
+					<div class="button">more</div> 
+					
+				</a>
+			</div> -->
+		
+			<div class="box">
+				<img src="https://ihsinchendesign.files.wordpress.com/2022/06/mosterapp2.png?w=860" alt="">
+				<div class="title">遊戲學英文單字APP</div>
+				<div class="year">2022</div>
+				<a href="2/p2.html">
+					<div class="button">more</div>
+				</a>
+			</div>
+			<!--<div class="box">
+				<img src="https://ihsinchendesign.files.wordpress.com/2022/06/html.png" alt="">
+				<div class="title">html&css練習</div>
+				<div class="year">2022</div>
+				<a href="https://codepen.io/jzknqsxb-the-looper/full/QWmjmjX">
+					<div class="button">more</div> 
+				</a>>
+			</div>  -->
+			
+
+			<footer>
+        <p>Email: irischen89@gmail.com</p>
+        <p>Copyright &copy; 2023 Iris's Portfolio</p>
+    
+</body>
+
+    </footer>
+</html>

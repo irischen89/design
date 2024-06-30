@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://plus.unsplash.com/premium_photo-1672070779337-e5655d9bbd9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px 0;
+}
+
+.tab {
+    margin: 0 10px;
+}
+
+.tab a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%; /* Make the footer span the entire width */
+}
